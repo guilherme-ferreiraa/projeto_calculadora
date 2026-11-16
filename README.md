@@ -1,0 +1,59 @@
+Projeto Calculadora — Módulo FinançApp
+
+Trabalho prático desenvolvido para a disciplina de Qualidade de Software no Centro Universitário Facens. O objetivo foi construir um módulo de cálculos matemáticos para o aplicativo fictício **FinançApp**, aplicando testes automatizados, tratamento de exceções, refatoração e documentação JavaDoc.
+
+
+Informações do Aluno: 
+
+- Aluno: Guilherme Ferreira Agostinho
+- Curso: Análise e Desenvolvimento de Sistemas (ADS)
+- RA: 251982
+- Instituição: Centro Universitário Facens
+- Semestre: 2026.2
+
+
+
+Sobre o Projeto:
+
+O FinançApp necessita de um componente centralizado para realizar operações aritméticas básicas que servem de suporte para cálculo de orçamentos, divisão de despesas entre usuários e projeções financeiras
+
+Em vez de criar uma calculadora simples, o foco do trabalho foi garantir a qualidade do código através de:
+1.Validação e Tratamento de Erros: Impedir divisões por zero e operadores inválidos usando exceções (`IllegalArgumentException`)
+2. Testes: Criação de uma classe de teste (`TesteCalculadora`) para validar tanto as operações normais quanto os cenários de erro
+3.Refatoração: Organização das funções em métodos puros e uso de *switch expressions* para melhorar a leitura do codigo
+4.Documentação: Comentários no padrão JavaDoc e geração dos arquivos HTML na pasta `docs/`
+5. Versionamento:Controle de versão no Git com histórico de commits e criação da branch `Refatoracao`
+
+
+
+ Operações Suportadas: 
+
+| Operação | Sinal | Descrição / Regra |
+
+| Soma | + | Adição simples entre dois numeros inteiros|
+| Subtração | - | Subtração do segundo valor em relação ao primeiro |
+| Multiplicação | * | Produto dos valores |
+| Divisão | / | Divisão inteira. Lança exceção em caso de divisão por zero. |
+
+
+
+ Tecnologias Utilizadas: 
+
+- Linguagem: Java 17+
+- IDE:Visual Studio Code 
+- Documentação: JavaDoc
+- Controle de Versão: Git e GitHub
+
+
+
+ Estrutura de Arquivos: 
+
+
+projeto_calculadora/
+├── src/
+│   └── calculadora/
+│       ├── Calculadora.java        # Lógica das operações e validações
+│       └── TesteCalculadora.java   # Execução dos testes e captura de exceções
+├── docs/                           # Documentação HTML gerada pelo JavaDoc
+├── images/                         # Prints das telas de teste e javadoc
+└── README.md                       # Apresentação do repositório
